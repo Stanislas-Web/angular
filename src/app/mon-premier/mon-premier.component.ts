@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mon-premier',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mon-premier.component.scss']
 })
 export class MonPremierComponent implements OnInit {
+  @Input() c:string;
 
   constructor() { }
 

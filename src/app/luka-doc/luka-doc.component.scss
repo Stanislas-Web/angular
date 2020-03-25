@@ -1,0 +1,50 @@
+main{
+    padding: 4% 10% 0% 10% ;
+    margin-top: 3%;
+    display: flex;
+}
+.menu{
+    margin-top: 3%;
+    margin-left: -3.5%;
+    width: 40%;
+    top: 5%;
+    
+}
+.contenu{
+    margin: 0% 5% 0% 5%;
+    width: 80%;
+    font-size: 15px;
+    font-weight: normal;
+    color: #505061;
+    left: 15%;
+}
+h2{
+    color:#16161D;
+    font-weight: bold;
+    font-size: 20px;
+}
+.norme{
+    margin-top: 3%;
+    width: 30%;
+    color: #505061;
+    
+    
+
+}
+.box{   
+    flex-grow: 1;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:#242424;
+    font-weight: normal;
+}
+ul li a:hover{
+    color: #286090;
+
+}
+

@@ -1,15 +1,28 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Mes appareils</h2>
-      <ul class="list-group">
-        <app-appareil *ngFor="let appareil of appareils"
-        [appareilName]="appareil.name"
-        [appareilStatus]="appareil.status"></app-appareil>      
-    </ul>
-    <div style="text-align: center;">
-      <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
-      <button class="btn btn-danger" style="margin-left:2% ;" [disabled]="!isAuth" (click)="onEteint()">Tout Eteindre</button>
-    </div></div>
-  </div>
-</div>
+ <header>
+    <div class="divImg">
+      <a routerLink="/accueil"><img src="../assets/logo-black.png" alt="">
+      <span> lukaPay</span>
+    </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li routerLinkActive="active"><a routerLink="/accueil">Accueil</a></li>
+        <li routerLinkActive="active"><a routerLink="/doc">Documents</a></li>
+        <li ><a routerLink="">Ressources</a></li>
+        <li><a routerLink="">Blog</a></li>
+
+      </ul>
+
+    </nav>
+  </header>
+  
+    <router-outlet></router-outlet>
+
+
+  <footer>
+    <a routerLink="/accueil"><img src="../assets/logo-black.png" alt=""></a>
+      <span> lukaPay</span>
+      <div> &copy; 2020 lukaPay. Publié sous licence MIT</div>
+    
+  </footer>
