@@ -48,3 +48,20 @@ ul li a:hover{
 
 }
 
+@media screen and (max-width:997px){ 
+
+    main{
+        padding: 4% 5% 0% 5% ;
+        margin-top: 3%;
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+    .norme{
+        display: none;
+    }
+
+}
+

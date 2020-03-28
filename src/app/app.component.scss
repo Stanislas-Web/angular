@@ -12,6 +12,9 @@ header{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     // align-items: center;
 }
+.fa-bars{
+    display: none;
+}
 .divImg{
     width: 100%;
 }
@@ -49,9 +52,6 @@ ul{
             text-decoration: none;
             color: #3D3D3D;
         }
-
-
-
     }
 }
 
@@ -60,4 +60,40 @@ ul{
 }
 ul li a:hover{
     color: #286090;
+}
+#menuResponse{
+    display: none;
+}
+
+@media screen and (max-width:997px){ 
+    ul li {
+        display: none;
+    }
+    .fa-bars{
+        display: flex;
+        justify-content: flex-end;
+    }
+    header{
+        width: 100%;
+        padding: 2% 10% 2% 10% ;
+    }
+    main{
+        padding: 10% 10% 0% 10% ;
+        margin-top: 3%;
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .norme{
+        display: none;
+    }
+    i li{
+        list-style: none;
+        display: none;
+    }
+
+  
+
+  
 }
